@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="CII 60+ — Ondas Digitais: aprenda informática com atividades simples e acessíveis.">
+<title>CII 60+ | Ondas Digitais</title>
+<style>
+:root{--navy:#071b3a;--blue:#0b4f8a;--cyan:#55d9f5;--light:#eef7ff;--ink:#12243a;--white:#fff;--green:#137547;--gold:#ffcf5a}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(135deg,#06162e,#0a3764 58%,#087d9a);color:var(--ink);font-size:18px;line-height:1.55}
+header{color:white;padding:22px 16px;background:rgba(3,14,32,.78);border-bottom:2px solid var(--cyan)}
+.head-inner{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:14px}
+.logo{display:grid;place-items:center;width:76px;height:76px;border-radius:18px;background:linear-gradient(145deg,var(--cyan),#fff);color:var(--navy);font-weight:900;font-size:19px;text-align:center;box-shadow:0 0 22px #55d9f566}
+.brand h1{margin:0;font-size:clamp(32px,5vw,48px);line-height:1.05}
+.brand p{margin:5px 0 0;font-size:17px}
+.org{text-align:right}.org strong{display:block;font-size:clamp(20px,3vw,28px);letter-spacing:1px}.org span{font-size:14px;letter-spacing:1.5px}
+main{max-width:1100px;margin:24px auto;padding:0 14px 36px}
+.panel{background:rgba(255,255,255,.97);border-radius:22px;padding:clamp(18px,3vw,30px);margin:18px 0;box-shadow:0 12px 32px #00142d55}
+.hero{display:grid;grid-template-columns:1.3fr .7fr;gap:22px;align-items:center;background:linear-gradient(120deg,#fff,#e5f8ff)}
+h2{color:var(--blue);font-size:clamp(25px,3.5vw,34px);margin:0 0 12px}
+h3{font-size:22px;margin:0 0 8px;color:var(--blue)}
+p{margin:8px 0 14px}
+.hero-art{min-height:180px;border-radius:18px;background:radial-gradient(circle at 50% 35%,#fff 0 8%,#55d9f5 9% 10%,transparent 11%),linear-gradient(145deg,#0b4f8a,#061b3d);display:grid;place-items:center;color:white;text-align:center;padding:18px;font-size:23px;font-weight:bold}
+label{display:block;font-weight:700;margin:12px 0 6px}
+input,select{width:100%;font-size:18px;padding:14px;border:2px solid #8ba9c7;border-radius:12px;background:white;color:#14263b}
+button{font-size:18px;font-weight:700;padding:13px 18px;border:0;border-radius:12px;background:var(--blue);color:white;cursor:pointer;margin:8px 6px 0 0;min-height:48px}
+button:hover{filter:brightness(1.12)}button:focus,input:focus{outline:3px solid var(--gold);outline-offset:2px}
+button.secondary{background:#e4f3ff;color:var(--blue);border:2px solid #9bc9e8}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.item{padding:18px 12px;border:1px solid #c4dcec;border-radius:16px;text-align:center;background:#f5fbff}
+.item .emoji{font-size:42px;display:block}.item strong{display:block;font-size:20px;margin-top:5px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.info{padding:18px;border-radius:16px;background:#eaf6ff;border-left:5px solid var(--cyan)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.step{padding:16px 8px;background:#eaf6ff;border-radius:14px;text-align:center;font-weight:700}.step span{display:block;font-size:30px}
+#quizForm fieldset{border:1px solid #c6d9e9;border-radius:14px;padding:16px;margin:14px 0}
+legend{font-weight:700;color:var(--blue);padding:0 6px}
+.option{display:flex;align-items:flex-start;gap:10px;padding:9px;border-radius:8px;font-weight:400;cursor:pointer}
+.option input{width:22px;height:22px;flex:0 0 22px;margin-top:4px}
+#result{display:none;background:#e8f8ef;border:2px solid #8ad0a8;border-radius:16px;padding:20px;margin-top:18px}
+.small{font-size:15px;color:#42566d}.footer{text-align:center;color:white;padding:12px}
+@media(max-width:700px){.hero{grid-template-columns:1fr}.org{text-align:left}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.two{grid-template-columns:1fr}.steps{grid-template-columns:repeat(2,1fr)}.logo{width:64px;height:64px}.panel{border-radius:16px}}
+@media(max-width:390px){.grid{grid-template-columns:1fr}.brand{align-items:flex-start}}
+</style>
+</head>
+<body>
+<header>
+  <div class="head-inner">
+    <div class="brand"><div class="logo" aria-label="Logo CII 60 mais">CII<br>60+</div><div><h1>CII 60+</h1><p>Curso de Iniciação à Informática</p></div></div>
+    <div class="org"><strong>ONDAS DIGITAIS</strong><span>TECNOLOGIA PARA TODOS</span></div>
+  </div>
+</header>
+<main>
+  <section class="panel hero">
+    <div><h2>Aprender tecnologia é para todas as idades!</h2>
+      <p>Bem-vindo(a) ao espaço de aprendizagem do CII 60+. Aqui você vai conhecer as partes do computador, aprender conceitos básicos e praticar com tranquilidade.</p>
+      <p><strong>Aprenda no seu ritmo. Perguntar também faz parte de aprender.</strong></p>
+    </div>
+    <div class="hero-art" role="img" aria-label="Ilustração de computador e tecnologia">💻<br>Descobrir • Praticar • Aprender</div>
+  </section>
+
+  <section class="panel" id="cadastro">
+    <h2>1. Identifique-se para começar</h2>
+    <p>Digite seu nome. O registro de atividade fica salvo apenas neste navegador e neste dispositivo.</p>
+    <label for="studentName">Seu nome</label><input id="studentName" maxlength="80" autocomplete="name" placeholder="Digite seu nome">
+    <label for="studentClass">Turma (opcional)</label><input id="studentClass" maxlength="50" placeholder="Ex.: CII 60+ — Turma 1">
+    <button type="button" id="startBtn">Começar atividade</button>
+    <p id="welcomeMsg" aria-live="polite"></p>
+  </section>
+
+  <section class="panel">
+    <h2>2. Conheça os componentes do computador</h2>
+    <p>Os componentes ajudam a gente a usar o computador. Toque ou clique nos cartões para conhecer exemplos.</p>
+    <div class="grid">
+      <div class="item"><span class="emoji">🖥️</span><strong>Monitor</strong><span>Mostra textos, imagens e vídeos.</span></div>
+      <div class="item"><span class="emoji">🧰</span><strong>Gabinete</strong><span>Abriga várias peças que fazem o computador funcionar.</span></div>
+      <div class="item"><span class="emoji">⌨️</span><strong>Teclado</strong><span>Usado para digitar letras e números.</span></div>
+      <div class="item"><span class="emoji">🖱️</span><strong>Mouse</strong><span>Ajuda a apontar, clicar e selecionar.</span></div>
+      <div class="item"><span class="emoji">🔊</span><strong>Caixas de som</strong><span>Reproduzem sons.</span></div>
+      <div class="item"><span class="emoji">🎧</span><strong>Fones de ouvido</strong><span>Permitem ouvir áudio com mais privacidade.</span></div>
+      <div class="item"><span class="emoji">🖨️</span><strong>Impressora</strong><span>Imprime documentos e imagens.</span></div>
+      <div class="item"><span class="emoji">📷</span><strong>Webcam</strong><span>Capta imagem em chamadas de vídeo.</span></div>
+      <div class="item"><span class="emoji">💾</span><strong>Pen drive</strong><span>Guarda e transporta arquivos.</span></div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>3. Hardware e software</h2>
+    <div class="two">
+      <div class="info"><h3>🧩 Hardware</h3><p>É a parte física do computador: aquilo que podemos tocar, como teclado, monitor e mouse.</p></div>
+      <div class="info"><h3>🧠 Software</h3><p>São os programas e aplicativos que usamos, como navegador de internet, editor de texto e jogos.</p></div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>4. Uma sequência útil</h2>
+    <div class="steps">
+      <div class="step"><span>🔌</span>Ligar</div><div class="step"><span>🖱️</span>Usar</div><div class="step"><span>💾</span>Salvar</div><div class="step"><span>⏻</span>Desligar</div>
+    </div>
+    <p class="small">Antes de desligar, salve seus trabalhos e use a opção “Desligar” do sistema. Evite tirar o computador da tomada enquanto estiver ligado.</p>
+  </section>
+
+  <section class="panel" id="atividade">
+    <h2>5. Teste seus conhecimentos</h2>
+    <p>São 15 perguntas simples. Escolha uma resposta em cada pergunta e depois clique em “Ver meu resultado”.</p>
+    <form id="quizForm"><div id="questions"></div><button type="submit">Ver meu resultado</button><button type="button" class="secondary" id="resetBtn">Refazer atividade</button></form>
+    <div id="result" aria-live="polite"></div>
+  </section>
+
+  <section class="panel">
+    <h2>6. Consultar resultados salvos neste dispositivo</h2>
+    <p>Informe o nome usado na atividade. Por privacidade, os resultados não são enviados a um servidor e não aparecem automaticamente em outros celulares ou computadores.</p>
+    <label for="historyName">Nome do participante</label><input id="historyName" maxlength="80" placeholder="Digite o nome usado">
+    <button type="button" id="historyBtn">Consultar histórico</button><div id="historyResult" aria-live="polite"></div>
+    <p class="small">Atenção: não use este recurso para guardar dados pessoais sensíveis. O histórico pode ser apagado se os dados do navegador forem limpos.</p>
+  </section>
+</main>
+<div class="footer">CII 60+ • Ondas Digitais — Tecnologia para todos</div>
+<script>
+const questions = [
+ {q:"Qual componente mostra textos, imagens e vídeos?",a:["Monitor","Teclado","Mouse"],c:0,e:"O monitor apresenta as informações na tela."},
+ {q:"Qual componente usamos para digitar?",a:["Caixa de som","Teclado","Impressora"],c:1,e:"O teclado serve para digitar letras, números e símbolos."},
+ {q:"Para que serve o mouse?",a:["Imprimir papel","Apontar e clicar","Guardar água"],c:1,e:"O mouse ajuda a apontar, clicar e selecionar itens."},
+ {q:"O que é hardware?",a:["A parte física do computador","Somente a internet","Uma senha"],c:0,e:"Hardware é a parte física, como monitor e teclado."},
+ {q:"O que é software?",a:["Um cabo elétrico","Um programa ou aplicativo","Uma cadeira"],c:1,e:"Software é o conjunto de programas e aplicativos."},
+ {q:"Qual item pode imprimir documentos?",a:["Webcam","Mouse","Impressora"],c:2,e:"A impressora coloca textos e imagens no papel."},
+ {q:"Qual dispositivo pode captar sua imagem numa videochamada?",a:["Webcam","Pen drive","Teclado"],c:0,e:"A webcam capta imagens e transmite vídeo."},
+ {q:"Para que serve um pen drive?",a:["Aumentar o volume","Guardar e transportar arquivos","Mostrar imagens na tela"],c:1,e:"O pen drive armazena arquivos e pode transportá-los."},
+ {q:"O que devemos fazer antes de desligar o computador?",a:["Salvar o trabalho","Puxar todos os cabos","Molhar o teclado"],c:0,e:"Salvar evita perder o que foi feito."},
+ {q:"Qual é uma forma adequada de desligar o computador?",a:["Tirar a tomada sempre","Usar a opção Desligar do sistema","Bater no gabinete"],c:1,e:"Use a opção de desligamento do sistema operacional."},
+ {q:"Um navegador de internet é um exemplo de…",a:["Software","Monitor","Hardware"],c:0,e:"O navegador é um programa, portanto é software."},
+ {q:"Qual componente reproduz sons?",a:["Scanner","Caixa de som","Teclado"],c:1,e:"Caixas de som reproduzem áudio."},
+ {q:"Qual é uma boa prática ao criar uma senha?",a:["Compartilhar com todos","Usar uma senha forte e mantê-la privada","Escrever a senha em postagem pública"],c:1,e:"Senhas devem ser difíceis de adivinhar e não devem ser compartilhadas."},
+ {q:"Se uma mensagem pedir sua senha por um link suspeito, o que fazer?",a:["Clicar imediatamente","Enviar a senha","Não clicar e confirmar a origem"],c:2,e:"Desconfie de links inesperados e confirme a origem por outro canal."},
+ {q:"O que fazer se precisar de ajuda com uma tarefa digital?",a:["Pedir ajuda e praticar com calma","Desistir sempre","Esconder a dúvida"],c:0,e:"Perguntar, praticar e repetir fazem parte da aprendizagem."}
+];
+const questionsEl=document.getElementById("questions");
+questions.forEach((item,i)=>{
+ const fs=document.createElement("fieldset");
+ const legend=document.createElement("legend");legend.textContent=`Pergunta ${i+1} de ${questions.length}: ${item.q}`;fs.appendChild(legend);
+ item.a.forEach((answer,j)=>{
+  const label=document.createElement("label");label.className="option";
+  const input=document.createElement("input");input.type="radio";input.name=`q${i}`;input.value=j;input.required=true;
+  const span=document.createElement("span");span.textContent=answer;
+  label.append(input,span);fs.appendChild(label);
+ });
+ questionsEl.appendChild(fs);
+});
+const STORE="ondasDigitais_alunos_v1";
+function readHistory(){try{return JSON.parse(localStorage.getItem(STORE)||"[]")}catch(e){return []}}
+function norm(s){return s.trim().toLocaleLowerCase("pt-BR")}
+document.getElementById("startBtn").addEventListener("click",()=>{
+ const name=document.getElementById("studentName").value.trim();
+ if(!name){document.getElementById("welcomeMsg").textContent="Digite seu nome para começar.";document.getElementById("studentName").focus();return}
+ localStorage.setItem("ondasDigitais_alunoAtual_v1",JSON.stringify({name,group:document.getElementById("studentClass").value.trim()}));
+ document.getElementById("welcomeMsg").textContent=`Olá, ${name}! Sua atividade está pronta. Boa aprendizagem!`;
+ document.getElementById("historyName").value=name;
+ document.getElementById("atividade").scrollIntoView({behavior:"smooth",block:"start"});
+});
+document.getElementById("quizForm").addEventListener("submit",e=>{
+ e.preventDefault();
+ const name=document.getElementById("studentName").value.trim();
+ if(!name){document.getElementById("welcomeMsg").textContent="Antes de ver o resultado, digite seu nome na área de identificação.";document.getElementById("cadastro").scrollIntoView({behavior:"smooth"});return}
+ let score=0;const feedback=[];
+ questions.forEach((q,i)=>{
+  const selected=document.querySelector(`input[name="q${i}"]:checked`);
+  const correct=selected && Number(selected.value)===q.c;
+  if(correct)score++;
+  feedback.push(`<li><strong>Pergunta ${i+1}:</strong> ${correct?"Acertou!":"Resposta correta: "+q.a[q.c]+". "} ${q.e}</li>`);
+ });
+ const percent=Math.round(score/questions.length*100);
+ let phrase=percent===100?"Excelente! Você acertou todas. Continue explorando a tecnologia!":percent>=70?"Muito bem! Você está avançando. Continue praticando!":percent>=40?"Bom esforço! Reveja as explicações e tente novamente.":"Cada tentativa é uma aprendizagem. Revise o conteúdo e tente mais uma vez!";
+ const result=document.getElementById("result");result.style.display="block";
+ result.innerHTML=`<h3>Seu resultado, ${escapeHtml(name)}!</h3><p><strong>${score} de ${questions.length} acertos — ${percent}%</strong></p><p>${phrase}</p><details><summary>Ver correção e explicações</summary><ol>${feedback.join("")}</ol></details>`;
+ const record={name,group:document.getElementById("studentClass").value.trim(),score,total:questions.length,percent,phrase,date:new Date().toLocaleString("pt-BR")};
+ const history=readHistory();history.push(record);
+ try{localStorage.setItem(STORE,JSON.stringify(history));}catch(err){}
+ document.getElementById("historyName").value=name;
+ result.scrollIntoView({behavior:"smooth",block:"start"});
+});
+function escapeHtml(s){return s.replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]))}
+document.getElementById("resetBtn").addEventListener("click",()=>{
+ document.getElementById("quizForm").reset();document.getElementById("result").style.display="none";
+ document.getElementById("atividade").scrollIntoView({behavior:"smooth",block:"start"});
+});
+document.getElementById("historyBtn").addEventListener("click",()=>{
+ const name=document.getElementById("historyName").value.trim(),out=document.getElementById("historyResult");
+ if(!name){out.textContent="Digite um nome para consultar.";return}
+ const matches=readHistory().filter(r=>norm(r.name)===norm(name));
+ if(!matches.length){out.textContent="Nenhum resultado encontrado neste navegador para esse nome.";return}
+ out.innerHTML="<h3>Resultados encontrados</h3><ul>"+matches.map(r=>`<li><strong>${escapeHtml(r.name)}</strong> — ${r.score}/${r.total} acertos (${r.percent}%)<br><span class="small">${escapeHtml(r.date)}${r.group?" • "+escapeHtml(r.group):""}</span><br>${escapeHtml(r.phrase)}</li>`).join("")+"</ul>";
+});
+try{const saved=JSON.parse(localStorage.getItem("ondasDigitais_alunoAtual_v1")||"null");if(saved){document.getElementById("studentName").value=saved.name||"";document.getElementById("studentClass").value=saved.group||"";}}catch(e){}
+</script>
+</body>
+</html>
